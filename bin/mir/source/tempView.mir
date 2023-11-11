@@ -1,0 +1,234 @@
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 6; ]
+import Toybox.Complications;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 7; ]
+import Toybox.ActivityMonitor;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 9; ]
+class tempView extends WatchUi.WatchFace{
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 11; @position = 8; ]
+    var steps;
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 13; @position = 8; ]
+    var stepDisplay;
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 14; @position = 8; ]
+    var stepString = "0";
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 16; ]
+    function initialize() as Void {
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_16_26_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 17 8 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_16_26_stop:
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 21; ]
+    function onLayout(dc as Dc) as Void {
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_21_40_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 22 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_21_40_stop:
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 25; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 29; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 33 8 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_start" "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_stop" ]
+        %timeFormat.1 = local;
+        %tmp.1 = "$1$:$2$";
+        lputv %timeFormat.1 %tmp.1;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 34 8 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_start" "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_stop" ]
+        %clockTime.2 = local;
+        %tmp.2 = getm $.Toybox.System;
+        %tmp.3 = getv function %tmp.2 :getClockTime;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %clockTime.2 %tmp.4;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 35 8 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_start" "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_stop" ]
+        %hours.3 = local;
+        %tmp.5 = lgetv %clockTime.2;
+        %tmp.6 = getv %tmp.5 :hour;
+        lputv %hours.3 %tmp.6;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 37 8 ]
+        %tmp.8 = getv ? :Properties;
+        %tmp.9 = getv function %tmp.8 :getValue;
+        %tmp.10 = "ForegroundColor";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        putv self :myForegroundColor %tmp.11;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 39 8 ]
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_39_8_if_stmt:
+        %tmp.12 = getm $.Toybox.System;
+        %tmp.13 = getv function %tmp.12 :getDeviceSettings;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = getv %tmp.14 :is24Hour;
+        %tmp.16 = not %tmp.15;
+        bf %tmp.16 @_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_39_8_if_false;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_39_8_if_true:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_39_50_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 40 12 ]
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_40_12_if_stmt:
+        %tmp.18 = lgetv %hours.3;
+        %tmp.19 = 12;
+        %tmp.20 = gt %tmp.18 %tmp.19;
+        bf %tmp.20 @_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_40_12_if_end;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_40_12_if_true:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_40_28_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 41 16 ]
+        %tmp.22 = lgetv %hours.3;
+        %tmp.23 = 12;
+        %tmp.24 = sub %tmp.22 %tmp.23;
+        lputv %hours.3 %tmp.24;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_40_28_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_40_12_if_end;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_40_12_if_end:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_39_50_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_39_8_if_end;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_39_8_if_false:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_43_15_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 44 12 ]
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_44_12_if_stmt:
+        %tmp.26 = getv ? :Properties;
+        %tmp.27 = getv function %tmp.26 :getValue;
+        %tmp.28 = "UseMilitaryFormat";
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        bf %tmp.29 @_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_44_12_if_end;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_44_12_if_true:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_44_58_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 45 16 ]
+        %tmp.30 = "$1$$2$";
+        lputv %timeFormat.1 %tmp.30;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 46 16 ]
+        %tmp.31 = lgetv %hours.3;
+        %tmp.32 = getv function %tmp.31 :format;
+        %tmp.33 = "%02d";
+        %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
+        lputv %hours.3 %tmp.34;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_44_58_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_44_12_if_end;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_44_12_if_end:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_43_15_stop:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_39_8_if_end:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 50 8 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_start" "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_stop" ]
+        %timeString.4 = local;
+        %tmp.35 = getm $.Toybox.Lang;
+        %tmp.36 = getv function %tmp.35 :format;
+        %tmp.38 = lgetv %timeFormat.1;
+        %tmp.39 = newa 2;
+        %tmp.41 = lgetv %hours.3;
+        %tmp.42 = dup %tmp.39;
+        %tmp.43 = aputv %tmp.42 0 %tmp.41;
+        %tmp.44 = lgetv %clockTime.2;
+        %tmp.45 = getv %tmp.44 :min;
+        %tmp.46 = getv function %tmp.45 :format;
+        %tmp.47 = "%02d";
+        %tmp.48 = invoke %tmp.45 %tmp.46(%tmp.47);
+        %tmp.49 = dup %tmp.43;
+        %tmp.50 = aputv %tmp.49 1 %tmp.48;
+        %tmp.51 = invoke %tmp.35 %tmp.36(%tmp.38, %tmp.50);
+        lputv %timeString.4 %tmp.51;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 53 8 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_start" "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_stop" ]
+        %view.5 = local;
+        %tmp.53 = getv ? :View;
+        %tmp.54 = getv function %tmp.53 :findDrawableById;
+        %tmp.55 = "TimeLabel";
+        %tmp.56 = invoke %tmp.53 %tmp.54(%tmp.55);
+        %tmp.57 = as %tmp.56 Text;
+        lputv %view.5 %tmp.57;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 54 8 ]
+        %tmp.58 = lgetv %view.5;
+        %tmp.59 = getv function %tmp.58 :setColor;
+        %tmp.61 = getv ? :myForegroundColor;
+        invoke %tmp.58 %tmp.59(%tmp.61);
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 55 8 ]
+        %tmp.62 = lgetv %view.5;
+        %tmp.63 = getv function %tmp.62 :setText;
+        %tmp.65 = lgetv %timeString.4;
+        invoke %tmp.62 %tmp.63(%tmp.65);
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 58 8 ]
+        %tmp.67 = getv ? :View;
+        %tmp.68 = getv function %tmp.67 :onUpdate;
+        %tmp.70 = lgetv %dc;
+        invoke %tmp.67 %tmp.68(%tmp.70);
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_29_40_stop:
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 62; ]
+    function onComplicationChanged() {
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_62_37_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 63 8 ]
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_8_if_stmt:
+        %tmp.2 = getv ? :mComplication;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_8_if_false;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_8_if_true:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_35_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 64 12 ]
+        %tmp.6 = getv ? :mComplication;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        %tmp.8 = getv %tmp.7 :value;
+        putv self :steps %tmp.8;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 65 12 ]
+        [ "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_35_start" "_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_35_stop" ]
+        %stepView.1 = local;
+        %tmp.10 = getv ? :View;
+        %tmp.11 = getv function %tmp.10 :findDrawableById;
+        %tmp.12 = "StepLabel";
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        %tmp.14 = as %tmp.13 Text;
+        lputv %stepView.1 %tmp.14;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 66 12 ]
+        %tmp.15 = lgetv %stepView.1;
+        %tmp.16 = getv function %tmp.15 :setText;
+        %tmp.17 = getm $.Toybox.Lang;
+        %tmp.18 = getv function %tmp.17 :format;
+        %tmp.19 = "$1$";
+        %tmp.20 = newa 1;
+        %tmp.22 = getv ? :steps;
+        %tmp.23 = dup %tmp.20;
+        %tmp.24 = aputv %tmp.23 0 %tmp.22;
+        %tmp.25 = invoke %tmp.17 %tmp.18(%tmp.19, %tmp.24);
+        invoke %tmp.15 %tmp.16(%tmp.25);
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_35_stop:
+        goto @_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_8_if_end;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_8_if_false:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_68_10_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 69 8 ]
+        %tmp.26 = getm $.Toybox.System;
+        %tmp.27 = getv function %tmp.26 :println;
+        %tmp.28 = "Bad input";
+        invoke %tmp.26 %tmp.27(%tmp.28);
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_68_10_stop:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_63_8_if_end:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_62_37_stop:
+    }
+}
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,1505 @@
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 12; ]
+    module Fonts {
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 15; ]
+    module JsonData {
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 15; ]
+        <init> {
+        }
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 18; ]
+    module Layouts {
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 18; ]
+        <init> {
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 19; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 20 12 ]
+            [ "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start" "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_custom_drawable_17943124591932510742.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_17943124591932510742.1 %tmp.1;
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 22 12 ]
+            [ "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start" "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_TimeLabel.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "TimeLabel";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_BLUE;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 416;
+            %tmp.24 = 0.5;
+            %tmp.25 = mul %tmp.23 %tmp.24;
+            %tmp.26 = dup %tmp.20;
+            %tmp.27 = aputv %tmp.26 %tmp.22 %tmp.25;
+            %tmp.29 = const :locY;
+            %tmp.30 = 416;
+            %tmp.31 = lgetv %dc;
+            %tmp.32 = getv function %tmp.31 :getFontHeight;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :FONT_LARGE;
+            %tmp.35 = invoke %tmp.31 %tmp.32(%tmp.34);
+            %tmp.36 = sub %tmp.30 %tmp.35;
+            %tmp.37 = 0.5;
+            %tmp.38 = mul %tmp.36 %tmp.37;
+            %tmp.39 = dup %tmp.27;
+            %tmp.40 = aputv %tmp.39 %tmp.29 %tmp.38;
+            %tmp.42 = const :justification;
+            %tmp.43 = getm $.Toybox.Graphics;
+            %tmp.44 = getv %tmp.43 :TEXT_JUSTIFY_CENTER;
+            %tmp.45 = dup %tmp.40;
+            %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
+            %tmp.48 = const :font;
+            %tmp.49 = getm $.Toybox.Graphics;
+            %tmp.50 = getv %tmp.49 :FONT_LARGE;
+            %tmp.51 = dup %tmp.46;
+            %tmp.52 = aputv %tmp.51 %tmp.48 %tmp.50;
+            %tmp.5 = newc %tmp.8 (%tmp.52);
+            lputv %rez_cmp_local_text_TimeLabel.2 %tmp.5;
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 24 12 ]
+            [ "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start" "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_StepLabel.3 = local;
+            %tmp.55 = getm $.Toybox.WatchUi;
+            %tmp.56 = getv function ? %tmp.55 :Text;
+            %tmp.57 = newd 6;
+            %tmp.59 = const :identifier;
+            %tmp.60 = "StepLabel";
+            %tmp.61 = dup %tmp.57;
+            %tmp.62 = aputv %tmp.61 %tmp.59 %tmp.60;
+            %tmp.64 = const :color;
+            %tmp.65 = getm $.Toybox.Graphics;
+            %tmp.66 = getv %tmp.65 :COLOR_LT_GRAY;
+            %tmp.67 = dup %tmp.62;
+            %tmp.68 = aputv %tmp.67 %tmp.64 %tmp.66;
+            %tmp.70 = const :locX;
+            %tmp.71 = 416;
+            %tmp.72 = 0.5;
+            %tmp.73 = mul %tmp.71 %tmp.72;
+            %tmp.74 = dup %tmp.68;
+            %tmp.75 = aputv %tmp.74 %tmp.70 %tmp.73;
+            %tmp.77 = const :locY;
+            %tmp.78 = 416;
+            %tmp.79 = 67;
+            %tmp.80 = 100.0;
+            %tmp.81 = div %tmp.79 %tmp.80;
+            %tmp.82 = mul %tmp.78 %tmp.81;
+            %tmp.83 = dup %tmp.75;
+            %tmp.84 = aputv %tmp.83 %tmp.77 %tmp.82;
+            %tmp.86 = const :justification;
+            %tmp.87 = getm $.Toybox.Graphics;
+            %tmp.88 = getv %tmp.87 :TEXT_JUSTIFY_CENTER;
+            %tmp.89 = dup %tmp.84;
+            %tmp.90 = aputv %tmp.89 %tmp.86 %tmp.88;
+            %tmp.92 = const :font;
+            %tmp.93 = getm $.Toybox.Graphics;
+            %tmp.94 = getv %tmp.93 :FONT_NUMBER_MEDIUM;
+            %tmp.95 = dup %tmp.90;
+            %tmp.96 = aputv %tmp.95 %tmp.92 %tmp.94;
+            %tmp.53 = newc %tmp.56 (%tmp.96);
+            lputv %rez_cmp_local_text_StepLabel.3 %tmp.53;
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 26 12 ]
+            %tmp.97 = newa Array<WatchUi.Drawable> 3;
+            %tmp.99 = lgetv %rez_cmp_local_custom_drawable_17943124591932510742.1;
+            %tmp.100 = dup %tmp.97;
+            %tmp.101 = aputv %tmp.100 0 %tmp.99;
+            %tmp.103 = lgetv %rez_cmp_local_text_TimeLabel.2;
+            %tmp.104 = dup %tmp.101;
+            %tmp.105 = aputv %tmp.104 1 %tmp.103;
+            %tmp.107 = lgetv %rez_cmp_local_text_StepLabel.3;
+            %tmp.108 = dup %tmp.105;
+            %tmp.109 = aputv %tmp.108 2 %tmp.107;
+            ret %tmp.109;
+_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_stop:
+        }
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 30; ]
+    module Menus {
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 30; ]
+        <init> {
+        }
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 33; ]
+    module Strings {
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 33; ]
+        <init> {
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 34; @position = 27; initialized = true; ]
+        var ColorLightGray as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
+        var ColorBlue as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 36; @position = 27; initialized = true; ]
+        var ColorRed as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
+        var ZSteps as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
+        var ForegroundColorTitle as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
+        var BackgroundColorTitle as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 40; @position = 27; initialized = true; ]
+        var ColorDarkGray as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 41; @position = 27; initialized = true; ]
+        var MilitaryFormatTitle as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 42; @position = 27; initialized = true; ]
+        var ColorBlack as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
+        var ColorWhite as Symbol;
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 44; @position = 27; initialized = true; ]
+        var AppName as Symbol;
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 47; ]
+    module Styles {
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 47; ]
+        <init> {
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 48; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 48; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 49; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 52; ]
+        module system_size__menu_header {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 52; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 53; @position = 18; ]
+            const width as Number = 416;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 54; @position = 18; ]
+            const height as Number = 95;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 57; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 57; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 58; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 61; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 61; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 62; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 65; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 65; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 66; @position = 18; ]
+            const x as Number = 42;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 67; @position = 18; ]
+            const y as Number = 62;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 70; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 70; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 71; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__about.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 72; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 73; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 74; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 75; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 78; ]
+        module system_icon_light__question {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 78; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 79; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__question.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 80; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 81; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 82; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 83; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 86; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 86; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 87; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 90; ]
+        module prompt_font__title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 90; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 91 18 ]
+                %tmp.110 = getm $.Toybox.Graphics;
+                %tmp.111 = getv %tmp.110 :TEXT_JUSTIFY_CENTER;
+                %tmp.112 = getm $.Toybox.Graphics;
+                %tmp.113 = getv %tmp.112 :TEXT_JUSTIFY_VCENTER;
+                %tmp.114 = bitor %tmp.111 %tmp.113;
+                putv self :justification %tmp.114;
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 92 18 ]
+                %tmp.115 = getm $.Toybox.Graphics;
+                %tmp.116 = getv %tmp.115 :FONT_XTINY;
+                putv self :font %tmp.116;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 91; @position = 18; ]
+            const justification;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 92; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 95; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 95; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 96; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__discard.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 97; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 98; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 99; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 100; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 103; ]
+        module system_size__menu_item {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 103; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 104; @position = 18; ]
+            const width as Number = 416;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 105; @position = 18; ]
+            const height as Number = 105;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 108; ]
+        module system_color_dark__text {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 108; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 110 18 ]
+                %tmp.117 = getm $.Toybox.Graphics;
+                %tmp.118 = getv %tmp.117 :COLOR_TRANSPARENT;
+                putv self :background %tmp.118;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 109; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 110; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 113; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 113; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 114; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_destructive__discard.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 115; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 116; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 119; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 119; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 120; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__hint_action_menu.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 121; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 122; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 125; ]
+        module prompt_size__title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 125; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 126; @position = 18; ]
+            const width as Number = 176;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 127; @position = 18; ]
+            const height as Number = 75;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 130; ]
+        module confirmation_font__body {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 130; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 131 18 ]
+                %tmp.119 = getm $.Toybox.Graphics;
+                %tmp.120 = getv %tmp.119 :TEXT_JUSTIFY_CENTER;
+                %tmp.121 = getm $.Toybox.Graphics;
+                %tmp.122 = getv %tmp.121 :TEXT_JUSTIFY_VCENTER;
+                %tmp.123 = bitor %tmp.120 %tmp.122;
+                putv self :justification %tmp.123;
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 132 18 ]
+                %tmp.124 = getm $.Toybox.Graphics;
+                %tmp.125 = getv %tmp.124 :FONT_TINY;
+                putv self :font %tmp.125;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 131; @position = 18; ]
+            const justification;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 132; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 135; ]
+        module system_color_dark__background {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 135; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 136; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 137; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 140; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 140; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 141; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 144; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 144; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 145; @position = 18; ]
+            const scaleX as Number = 70;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 146; @position = 18; ]
+            const scaleY as Number = 70;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 147; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 150; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 150; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 151; @position = 18; ]
+            const y1 as Number = 322;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 152; @position = 18; ]
+            const x1 as Number = 79;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 153; @position = 18; ]
+            const y2 as Number = 416;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 154; @position = 18; ]
+            const x2 as Number = 311;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 157; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 157; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 158 18 ]
+                %tmp.126 = getm $.Toybox.Graphics;
+                %tmp.127 = getv %tmp.126 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.127;
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 159 18 ]
+                %tmp.128 = getm $.Toybox.Graphics;
+                %tmp.129 = getv %tmp.128 :FONT_TINY;
+                putv self :font %tmp.129;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 158; @position = 18; ]
+            const justification;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 159; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 162; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 162; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 163; @position = 18; ]
+            const x as Number = 85;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 164; @position = 18; ]
+            const y as Number = 83;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 167; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 167; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 168; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 171; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 171; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 172; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 173; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 176; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 176; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 177; @position = 18; ]
+            const x as Number = 208;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 178; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 179; @position = 18; ]
+            const y as Number = 332;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 182; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 182; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 183; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 184; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 185; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 188; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 188; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 189; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 192; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 192; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 193; @position = 18; ]
+            const width as Number = 333;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 194; @position = 18; ]
+            const height as Number = 270;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 197; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 197; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 198; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 201; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 201; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 202; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 203; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 206; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 206; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 207 18 ]
+                %tmp.130 = getm $.Toybox.WatchUi;
+                %tmp.131 = getv %tmp.130 :KEY_ENTER;
+                putv self :button %tmp.131;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 207; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 210; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 210; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 211; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 214; ]
+        module system_input__action_menu {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 214; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 215; @position = 18; ]
+            const y1 as Number = 338;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 216; @position = 18; ]
+            const x1 as Number = 0;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 217; @position = 18; ]
+            const y2 as Number = 390;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 218; @position = 18; ]
+            const x2 as Number = 390;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 221; ]
+        module system_icon_light__save {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 221; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 222; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__save.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 223; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 224; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 225; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 226; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 229; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 229; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 231 18 ]
+                %tmp.132 = getm $.Toybox.Graphics;
+                %tmp.133 = getv %tmp.132 :COLOR_TRANSPARENT;
+                putv self :background %tmp.133;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 230; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 231; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 234; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 234; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 235; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 238; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 238; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 239; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__warning.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 240; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 241; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 242; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 243; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 246; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 246; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 248 18 ]
+                %tmp.134 = getm $.Toybox.Graphics;
+                %tmp.135 = getv %tmp.134 :COLOR_TRANSPARENT;
+                putv self :background %tmp.135;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 247; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 248; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 251; ]
+        module activity_color_light__background {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 251; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 252; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 253; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 256; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 256; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 257; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 260; ]
+        module system_size__screen {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 260; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 261; @position = 18; ]
+            const width as Number = 416;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 262; @position = 18; ]
+            const height as Number = 416;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 265; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 265; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 266; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 269; ]
+        module system_color_light__background {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 269; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 270; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 271; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 274; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 274; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 275; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 278; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 278; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 279; @position = 18; ]
+            const x as Number = 208;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 280; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 281; @position = 18; ]
+            const y as Number = 317;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 284; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 284; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 286 18 ]
+                %tmp.136 = getm $.Toybox.Graphics;
+                %tmp.137 = getv %tmp.136 :COLOR_TRANSPARENT;
+                putv self :background %tmp.137;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 285; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 286; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 289; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 289; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 290 18 ]
+                %tmp.138 = getm $.Toybox.WatchUi;
+                %tmp.139 = getv %tmp.138 :KEY_ESC;
+                putv self :button %tmp.139;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 290; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 293; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 293; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 294; @position = 18; ]
+            const x as Number = 42;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 295; @position = 18; ]
+            const y as Number = 104;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 298; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 298; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 299; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__search.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 300; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 301; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 302; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 303; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 306; ]
+        module activity_color_light__text {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 306; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 308 18 ]
+                %tmp.140 = getm $.Toybox.Graphics;
+                %tmp.141 = getv %tmp.140 :COLOR_TRANSPARENT;
+                putv self :background %tmp.141;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 307; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 308; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 311; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 311; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 312; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 313; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 314; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 317; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 317; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 318; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__save.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 319; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 320; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 321; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 322; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 325; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 325; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 326; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 329; ]
+        module system_icon_light__search {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 329; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 330; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__search.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 331; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 332; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 333; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 334; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 337; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 337; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 338; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 341; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 341; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 342; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 345; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 345; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 346; @position = 18; ]
+            const x as Number = 332;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 347; @position = 18; ]
+            const y as Number = 258;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 350; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 350; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 352 18 ]
+                %tmp.142 = getm $.Toybox.Graphics;
+                %tmp.143 = getv %tmp.142 :COLOR_TRANSPARENT;
+                putv self :background %tmp.143;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 351; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 352; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 355; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 355; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 357 18 ]
+                %tmp.144 = getm $.Toybox.Graphics;
+                %tmp.145 = getv %tmp.144 :COLOR_TRANSPARENT;
+                putv self :background %tmp.145;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 356; @position = 18; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 357; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 360; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 360; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 361; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 362; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 363; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 366; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 366; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 367; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 368; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 369; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 372; ]
+        module prompt_loc__title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 373; @position = 18; ]
+            const x as Number = 120;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 374; @position = 18; ]
+            const y as Number = 20;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 377; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 377; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 378; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 381; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 381; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 383 18 ]
+                %tmp.146 = getm $.Toybox.Graphics;
+                %tmp.147 = getv %tmp.146 :COLOR_TRANSPARENT;
+                putv self :background %tmp.147;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 382; @position = 18; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 383; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 386; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 386; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 387; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 388; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 389; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 392; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 392; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 393; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 396; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 396; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 397; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__cancel.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 398; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 399; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 400; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 401; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 404; ]
+        module system_icon_light__about {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 404; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 405; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__about.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 406; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 407; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 408; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 409; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 412; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 412; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 413; @position = 18; ]
+            const scaleX as Number = 56;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 414; @position = 18; ]
+            const scaleY as Number = 56;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 415; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 418; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 418; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 419; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 422; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 422; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 423; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 424; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 425; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 428; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 428; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 429; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__hint_action_menu.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 430; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 431; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 434; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 434; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 435; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 438; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 438; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 439; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 442; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 442; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 443; @position = 18; ]
+            const x as Number = 208;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 444; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 445; @position = 18; ]
+            const y as Number = 0;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 448; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 448; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 449; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 450; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 453; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 453; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 454; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 457; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 457; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 458; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 461; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 461; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 462; @position = 18; ]
+            const scaleX as Number = 45;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 463; @position = 18; ]
+            const scaleY as Number = 45;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 464; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 467; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 467; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 468; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_destructive__warning.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 469; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 470; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 473; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 473; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 474; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 477; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 477; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 478; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__cancel.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 479; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 480; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 481; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 482; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 485; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 485; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 486; @position = 18; ]
+            const width as Number = 333;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 487; @position = 18; ]
+            const height as Number = 229;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 490; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 490; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 491; @position = 18; ]
+            const x as Number = 345;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 492; @position = 18; ]
+            const y as Number = 67;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 495; ]
+        module system_color_light__text {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 495; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 497 18 ]
+                %tmp.148 = getm $.Toybox.Graphics;
+                %tmp.149 = getv %tmp.148 :COLOR_TRANSPARENT;
+                putv self :background %tmp.149;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 496; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 497; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 500; ]
+        module system_icon_light__check {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 500; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 501; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__check.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 502; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 503; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 504; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 505; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 508; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 508; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 509; @position = 18; ]
+            const y1 as Number = 0;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 510; @position = 18; ]
+            const x1 as Number = 79;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 511; @position = 18; ]
+            const y2 as Number = 70;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 512; @position = 18; ]
+            const x2 as Number = 311;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 515; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 515; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 516; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__revert.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 517; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 518; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 519; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 520; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 523; ]
+        module system_size__subwindow {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 523; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 524; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 527; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 527; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 528; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 531; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 531; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 532; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__check.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 533; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 534; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 535; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 536; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 539; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 539; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 540; @position = 18; ]
+            const x as Number = 313;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 541; @position = 18; ]
+            const y as Number = 234;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 544; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 544; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 545; @position = 18; ]
+            const x as Number = 324;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 546; @position = 18; ]
+            const y as Number = 19;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 549; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 549; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 550; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 553; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 553; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 554; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 557; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 557; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 558; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 559; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 560; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 563; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 563; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 564; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 567; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 567; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 568; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__revert.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 569; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 570; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 571; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 572; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 575; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 575; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 576; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__question.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 577; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 578; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 579; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 580; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 583; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 583; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 584; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__discard.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 585; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 586; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 587; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 588; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 591; ]
+        module device_info {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 591; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 593 18 ]
+                %tmp.150 = getm $.Toybox.System;
+                %tmp.151 = getv %tmp.150 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.151;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 592; @position = 18; ]
+            const screenWidth as Number = 416;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 593; @position = 18; ]
+            const screenShape;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 594; @position = 18; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 595; @position = 18; ]
+            const screenHeight as Number = 416;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 596; @position = 18; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 597; @position = 18; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 600; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 600; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 601 18 ]
+                %tmp.152 = getm $.Toybox.Graphics;
+                %tmp.153 = getv %tmp.152 :TEXT_JUSTIFY_CENTER;
+                %tmp.154 = getm $.Toybox.Graphics;
+                %tmp.155 = getv %tmp.154 :TEXT_JUSTIFY_VCENTER;
+                %tmp.156 = bitor %tmp.153 %tmp.155;
+                putv self :justification %tmp.156;
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 602 18 ]
+                %tmp.157 = getm $.Toybox.Graphics;
+                %tmp.158 = getv %tmp.157 :FONT_TINY;
+                putv self :font %tmp.158;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 601; @position = 18; ]
+            const justification;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 602; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 605; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 605; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 606; @position = 18; ]
+            const scaleX as Float = 0.12;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 607; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 610; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 610; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 611; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_dark__warning.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 612; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 613; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 614; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 615; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 618; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 618; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 619; @position = 18; ]
+            const x as Number = 208;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 620; @position = 18; ]
+            const y as Number = 42;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 621; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 622; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 625; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 625; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 626; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 629; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 629; ]
+            <init> {
+[ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 631 18 ]
+                %tmp.159 = getm $.Toybox.Graphics;
+                %tmp.160 = getv %tmp.159 :COLOR_TRANSPARENT;
+                putv self :background %tmp.160;
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 630; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 631; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 634; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 634; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 635; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 636; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 637; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 640; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 640; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 641; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 642; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 643; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 646; ]
+        module confirmation_size__body {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 646; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 647; @position = 18; ]
+            const width as Number = 246;
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 648; @position = 18; ]
+            const height as Number = 250;
+        }
+        [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 651; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 651; ]
+            <init> {
+            }
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 652; @position = 18; ]
+            const filename as String = "/Users/jeffreyforste/Library/Application Support/Garmin/ConnectIQ/Devices/venu2/system_icon_positive__check.svg";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 653; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 654; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
