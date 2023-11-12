@@ -88,5 +88,22 @@ class tempView extends WatchUi.WatchFace {
         System.println("Bad input");
         }
     }
+}
+
+class tempViewDelegate extends WatchUi.WatchFaceDelegate
+{
+	var view;
+	
+	function initialize(v) {
+		WatchFaceDelegate.initialize();
+		view=v;	
+	}
+
+    function onPress(evt) {
+        Complications.exitTo(view.stepId);
+        return true;
+    }
+	
+
 
 }

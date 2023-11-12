@@ -285,6 +285,44 @@ _Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_84_8_if_end:
 _Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_82_67_stop:
     }
 }
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 93; ]
+class tempViewDelegate extends WatchUi.WatchFaceDelegate{
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 93; ]
+    <init> {
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 93; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 95; @position = 5; ]
+    var view;
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 97; ]
+    function initialize(v) as Void {
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_97_24_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 98 2 ]
+        %tmp.2 = getv ? :WatchFaceDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 99 2 ]
+        %tmp.5 = lgetv %v;
+        putv self :view %tmp.5;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_97_24_stop:
+    }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 102; ]
+    function onPress(evt) {
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_102_26_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 103 8 ]
+        %tmp.1 = getm $.Toybox.Complications;
+        %tmp.2 = getv function %tmp.1 :exitTo;
+        %tmp.4 = getv ? :view;
+        %tmp.5 = getv %tmp.4 :stepId;
+        invoke %tmp.1 %tmp.2(%tmp.5);
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" 104 8 ]
+        %tmp.6 = true;
+        ret %tmp.6;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_102_26_stop:
+    }
+}
 [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 1; ]
 <init> {
 }

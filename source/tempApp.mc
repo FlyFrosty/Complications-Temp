@@ -3,6 +3,8 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.System;
 
+import Toybox.Complications;
+
 
     var myBackgroundColor = 0x000000;
     var myForegroundColor = 0xFFFFFF;
@@ -41,10 +43,5 @@ class tempApp extends Application.AppBase {
         return Application.getApp() as tempApp;
     }
 
-    function onPress(clickEvent) {
 
-        // returns the complicationId within the boundingBoxes
-        System.println( "We found a complication! let's launch it ..." );
-        Complications.exitTo(view.stepId);
-    }
 }
