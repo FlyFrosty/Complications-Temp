@@ -43,10 +43,10 @@ module Rez {
 _Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start:
 [ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 20 12 ]
             [ "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start" "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_custom_drawable_17943124591932510742.1 = local;
+            %rez_cmp_local_custom_drawable_23219526012351931131.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_17943124591932510742.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_23219526012351931131.1 %tmp.1;
 [ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 22 12 ]
             [ "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start" "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_stop" ]
             %rez_cmp_local_text_TimeLabel.2 = local;
@@ -104,7 +104,7 @@ _Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_
             %tmp.62 = aputv %tmp.61 %tmp.59 %tmp.60;
             %tmp.64 = const :color;
             %tmp.65 = getm $.Toybox.Graphics;
-            %tmp.66 = getv %tmp.65 :COLOR_LT_GRAY;
+            %tmp.66 = getv %tmp.65 :COLOR_BLUE;
             %tmp.67 = dup %tmp.62;
             %tmp.68 = aputv %tmp.67 %tmp.64 %tmp.66;
             %tmp.70 = const :locX;
@@ -115,7 +115,7 @@ _Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_
             %tmp.75 = aputv %tmp.74 %tmp.70 %tmp.73;
             %tmp.77 = const :locY;
             %tmp.78 = 416;
-            %tmp.79 = 67;
+            %tmp.79 = 70;
             %tmp.80 = 100.0;
             %tmp.81 = div %tmp.79 %tmp.80;
             %tmp.82 = mul %tmp.78 %tmp.81;
@@ -128,14 +128,14 @@ _Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_
             %tmp.90 = aputv %tmp.89 %tmp.86 %tmp.88;
             %tmp.92 = const :font;
             %tmp.93 = getm $.Toybox.Graphics;
-            %tmp.94 = getv %tmp.93 :FONT_NUMBER_MEDIUM;
+            %tmp.94 = getv %tmp.93 :FONT_LARGE;
             %tmp.95 = dup %tmp.90;
             %tmp.96 = aputv %tmp.95 %tmp.92 %tmp.94;
             %tmp.53 = newc %tmp.56 (%tmp.96);
             lputv %rez_cmp_local_text_StepLabel.3 %tmp.53;
 [ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 26 12 ]
             %tmp.97 = newa Array<WatchUi.Drawable> 3;
-            %tmp.99 = lgetv %rez_cmp_local_custom_drawable_17943124591932510742.1;
+            %tmp.99 = lgetv %rez_cmp_local_custom_drawable_23219526012351931131.1;
             %tmp.100 = dup %tmp.97;
             %tmp.101 = aputv %tmp.100 0 %tmp.99;
             %tmp.103 = lgetv %rez_cmp_local_text_TimeLabel.2;

@@ -2,87 +2,89 @@
 <debugInfo>
 <manifest filename="/Users/jeffreyforste/Garmin Projects/temp/manifest.xml"/>
 <pcToLineNum>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="1" lineNum="8" parent="globals" pc="268435460" symbol="&lt;init&gt;"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="5" lineNum="7" parent="globals/Background" pc="268435515" symbol="&lt;init&gt;"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="6" lineNum="9" parent="globals/Background" pc="268435534" symbol="initialize"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="6" lineNum="10" parent="globals/Background" pc="268435538" symbol="initialize"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="6" lineNum="14" parent="globals/Background" pc="268435559" symbol="initialize"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="7" lineNum="17" parent="globals/Background" pc="268435580" symbol="draw"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="7" lineNum="19" parent="globals/Background" pc="268435582" symbol="draw"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="7" lineNum="20" parent="globals/Background" pc="268435607" symbol="draw"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="8" lineNum="7" parent="globals/Rez" pc="268435620" symbol="&lt;init&gt;"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="9" lineNum="9" parent="globals/tempView" pc="268435644" symbol="&lt;init&gt;"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="11" lineNum="21" parent="globals/tempView" pc="268435663" symbol="onLayout"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="11" lineNum="22" parent="globals/tempView" pc="268435665" symbol="onLayout"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="12" lineNum="62" parent="globals/tempView" pc="268435707" symbol="onComplicationChanged"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="12" lineNum="63" parent="globals/tempView" pc="268435711" symbol="onComplicationChanged"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="12" lineNum="64" parent="globals/tempView" pc="268435724" symbol="onComplicationChanged"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="12" lineNum="65" parent="globals/tempView" pc="268435746" symbol="onComplicationChanged"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="12" lineNum="66" parent="globals/tempView" pc="268435774" symbol="onComplicationChanged"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="12" lineNum="69" parent="globals/tempView" pc="268435831" symbol="onComplicationChanged"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="13" lineNum="16" parent="globals/tempView" pc="268435853" symbol="initialize"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="13" lineNum="17" parent="globals/tempView" pc="268435855" symbol="initialize"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="29" parent="globals/tempView" pc="268435874" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="33" parent="globals/tempView" pc="268435878" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="34" parent="globals/tempView" pc="268435885" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="35" parent="globals/tempView" pc="268435902" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="37" parent="globals/tempView" pc="268435912" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="39" parent="globals/tempView" pc="268435946" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="40" parent="globals/tempView" pc="268435971" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="41" parent="globals/tempView" pc="268435982" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="44" parent="globals/tempView" pc="268435998" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="45" parent="globals/tempView" pc="268436027" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="46" parent="globals/tempView" pc="268436034" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="50" parent="globals/tempView" pc="268436055" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="53" parent="globals/tempView" pc="268436120" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="54" parent="globals/tempView" pc="268436148" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="55" parent="globals/tempView" pc="268436168" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="14" lineNum="58" parent="globals/tempView" pc="268436182" symbol="onUpdate"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="15" lineNum="13" parent="globals/tempApp" pc="268436207" symbol="&lt;init&gt;"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="47" parent="globals/tempApp" pc="268436226" symbol="onPress"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="51" parent="globals/tempApp" pc="268436228" symbol="onPress"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="52" parent="globals/tempApp" pc="268436241" symbol="onPress"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="53" parent="globals/tempApp" pc="268436262" symbol="onPress"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="54" parent="globals/tempApp" pc="268436286" symbol="onPress"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="56" parent="globals/tempApp" pc="268436292" symbol="onPress"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="57" parent="globals/tempApp" pc="268436313" symbol="onPress"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="17" lineNum="21" parent="globals/tempApp" pc="268436317" symbol="onStart"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="17" lineNum="24" parent="globals/tempApp" pc="268436319" symbol="onStart"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="18" lineNum="43" parent="globals/tempApp" pc="268436344" symbol="getApp"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="18" lineNum="44" parent="globals/tempApp" pc="268436346" symbol="getApp"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="19" lineNum="37" parent="globals/tempApp" pc="268436362" symbol="onSettingsChanged"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="19" lineNum="38" parent="globals/tempApp" pc="268436364" symbol="onSettingsChanged"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="19" lineNum="40" parent="globals/tempApp" pc="268436398" symbol="onSettingsChanged"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="20" lineNum="32" parent="globals/tempApp" pc="268436415" symbol="getInitialView"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="20" lineNum="33" parent="globals/tempApp" pc="268436417" symbol="getInitialView"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="21" lineNum="16" parent="globals/tempApp" pc="268436458" symbol="initialize"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="21" lineNum="17" parent="globals/tempApp" pc="268436460" symbol="initialize"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="22" lineNum="28" parent="globals/tempApp" pc="268436479" symbol="onStop"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="23" lineNum="19" parent="globals/Rez/Layouts" pc="268436482" symbol="WatchFace"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="23" lineNum="20" parent="globals/Rez/Layouts" pc="268436494" symbol="WatchFace"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="23" lineNum="22" parent="globals/Rez/Layouts" pc="268436522" symbol="WatchFace"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="23" lineNum="24" parent="globals/Rez/Layouts" pc="268436657" symbol="WatchFace"/>
-<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="23" lineNum="26" parent="globals/Rez/Layouts" pc="268436769" symbol="WatchFace"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="1" lineNum="7" parent="globals/Background" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="2" lineNum="9" parent="globals/Background" pc="268435479" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="2" lineNum="10" parent="globals/Background" pc="268435483" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="2" lineNum="14" parent="globals/Background" pc="268435504" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="3" lineNum="17" parent="globals/Background" pc="268435525" symbol="draw"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="3" lineNum="19" parent="globals/Background" pc="268435527" symbol="draw"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempBackground.mc" id="3" lineNum="20" parent="globals/Background" pc="268435552" symbol="draw"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435565" symbol="&lt;init&gt;"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="5" lineNum="9" parent="globals/tempView" pc="268435589" symbol="&lt;init&gt;"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="7" lineNum="34" parent="globals/tempView" pc="268435608" symbol="onLayout"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="7" lineNum="35" parent="globals/tempView" pc="268435610" symbol="onLayout"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="8" lineNum="82" parent="globals/tempView" pc="268435652" symbol="onComplicationChanged"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="8" lineNum="84" parent="globals/tempView" pc="268435654" symbol="onComplicationChanged"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="8" lineNum="85" parent="globals/tempView" pc="268435676" symbol="onComplicationChanged"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="8" lineNum="86" parent="globals/tempView" pc="268435707" symbol="onComplicationChanged"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="8" lineNum="88" parent="globals/tempView" pc="268435734" symbol="onComplicationChanged"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="9" lineNum="20" parent="globals/tempView" pc="268435756" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="9" lineNum="21" parent="globals/tempView" pc="268435758" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="9" lineNum="25" parent="globals/tempView" pc="268435776" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="9" lineNum="26" parent="globals/tempView" pc="268435815" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="9" lineNum="27" parent="globals/tempView" pc="268435828" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="9" lineNum="28" parent="globals/tempView" pc="268435859" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="9" lineNum="29" parent="globals/tempView" pc="268435891" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="42" parent="globals/tempView" pc="268435919" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="46" parent="globals/tempView" pc="268435923" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="47" parent="globals/tempView" pc="268435930" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="48" parent="globals/tempView" pc="268435947" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="50" parent="globals/tempView" pc="268435957" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="52" parent="globals/tempView" pc="268435991" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="53" parent="globals/tempView" pc="268436016" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="54" parent="globals/tempView" pc="268436027" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="57" parent="globals/tempView" pc="268436043" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="58" parent="globals/tempView" pc="268436072" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="59" parent="globals/tempView" pc="268436079" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="63" parent="globals/tempView" pc="268436100" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="66" parent="globals/tempView" pc="268436165" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="67" parent="globals/tempView" pc="268436193" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="69" parent="globals/tempView" pc="268436221" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="70" parent="globals/tempView" pc="268436241" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="72" parent="globals/tempView" pc="268436255" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="74" parent="globals/tempView" pc="268436299" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc" id="10" lineNum="78" parent="globals/tempView" pc="268436313" symbol="onUpdate"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="11" lineNum="12" parent="globals/tempApp" pc="268436338" symbol="&lt;init&gt;"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="12" lineNum="44" parent="globals/tempApp" pc="268436357" symbol="onPress"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="12" lineNum="47" parent="globals/tempApp" pc="268436359" symbol="onPress"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="12" lineNum="48" parent="globals/tempApp" pc="268436380" symbol="onPress"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="13" lineNum="20" parent="globals/tempApp" pc="268436413" symbol="onStart"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="14" lineNum="40" parent="globals/tempApp" pc="268436416" symbol="getApp"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="14" lineNum="41" parent="globals/tempApp" pc="268436418" symbol="getApp"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="15" lineNum="34" parent="globals/tempApp" pc="268436434" symbol="onSettingsChanged"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="15" lineNum="35" parent="globals/tempApp" pc="268436436" symbol="onSettingsChanged"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="15" lineNum="37" parent="globals/tempApp" pc="268436470" symbol="onSettingsChanged"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="28" parent="globals/tempApp" pc="268436487" symbol="getInitialView"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="29" parent="globals/tempApp" pc="268436489" symbol="getInitialView"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="16" lineNum="30" parent="globals/tempApp" pc="268436523" symbol="getInitialView"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="17" lineNum="15" parent="globals/tempApp" pc="268436564" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="17" lineNum="16" parent="globals/tempApp" pc="268436566" symbol="initialize"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" id="18" lineNum="24" parent="globals/tempApp" pc="268436585" symbol="onStop"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="19" lineNum="19" parent="globals/Rez/Layouts" pc="268436588" symbol="WatchFace"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="19" lineNum="20" parent="globals/Rez/Layouts" pc="268436600" symbol="WatchFace"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="19" lineNum="22" parent="globals/Rez/Layouts" pc="268436628" symbol="WatchFace"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="19" lineNum="24" parent="globals/Rez/Layouts" pc="268436763" symbol="WatchFace"/>
+<entry filename="/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" id="19" lineNum="26" parent="globals/Rez/Layouts" pc="268436875" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
-<entry id="12" object="true" symbol="tempApp"/>
+<entry id="11" object="true" symbol="tempApp"/>
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
 <entry id="7" module="true" symbol="globals/Rez/Menus"/>
 <entry id="8389683" method="true" symbol="onSettingsChanged"/>
-<entry field="true" id="26" symbol="ColorRed"/>
-<entry field="true" id="10" symbol="myBackgroundColor"/>
-<entry field="true" id="29" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="30" symbol="ColorRed"/>
+<entry field="true" id="9" symbol="myBackgroundColor"/>
+<entry field="true" id="33" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="17" symbol="hasComplications"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry field="true" id="23" symbol="ColorBlue"/>
-<entry field="true" id="20" symbol="AppName"/>
+<entry field="true" id="27" symbol="ColorBlue"/>
+<entry field="true" id="24" symbol="AppName"/>
 <entry id="8388633" module="true" symbol="ActivityMonitor"/>
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-<entry field="true" id="8388912" symbol="steps"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="2" module="true" symbol="globals/Rez"/>
-<entry field="true" id="18" symbol="stepString"/>
+<entry field="true" id="22" symbol="stepString"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
 <entry field="true" id="8389065" symbol="locY"/>
@@ -91,63 +93,67 @@
 <entry id="8389348" symbol="font"/>
 <entry id="15" module="true" symbol="Menus"/>
 <entry id="8389275" method="true" symbol="getApp"/>
-<entry field="true" id="24" symbol="ColorDarkGray"/>
+<entry field="true" id="28" symbol="ColorDarkGray"/>
 <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="8389349" symbol="justification"/>
-<entry field="true" id="27" symbol="ColorWhite"/>
+<entry field="true" id="31" symbol="ColorWhite"/>
 <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
-<entry field="true" id="22" symbol="ColorBlack"/>
-<entry field="true" id="17" symbol="stepDisplay"/>
+<entry field="true" id="26" symbol="ColorBlack"/>
+<entry field="true" id="20" symbol="stepDisplay"/>
+<entry field="true" id="21" symbol="stepId"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
 <entry id="8388644" module="true" symbol="System"/>
-<entry field="true" id="9" symbol="mComplication"/>
-<entry field="true" id="11" symbol="myForegroundColor"/>
+<entry field="true" id="10" symbol="myForegroundColor"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry id="16" method="true" symbol="onComplicationChanged"/>
+<entry field="true" id="19" symbol="stepComp"/>
+<entry id="18" method="true" symbol="onComplicationChanged"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
 <entry id="8389068" method="true" symbol="draw"/>
-<entry field="true" id="19" symbol="LauncherIcon"/>
+<entry field="true" id="23" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry id="8389123" method="true" symbol="onShow"/>
-<entry field="true" id="30" symbol="ZSteps"/>
+<entry field="true" id="34" symbol="ZSteps"/>
 <entry id="8389350" module="true" symbol="globals"/>
-<entry field="true" id="21" symbol="BackgroundColorTitle"/>
+<entry field="true" id="25" symbol="BackgroundColorTitle"/>
 <entry id="8391962" module="true" symbol="Complications"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry id="13" object="true" symbol="tempView"/>
+<entry id="12" object="true" symbol="tempView"/>
 <entry id="8389279" method="true" symbol="onStart"/>
-<entry field="true" id="25" symbol="ColorLightGray"/>
+<entry field="true" id="13" symbol="view"/>
+<entry field="true" id="29" symbol="ColorLightGray"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry id="8389347" symbol="color"/>
 <entry id="8392031" method="true" symbol="onPress"/>
-<entry field="true" id="28" symbol="ForegroundColorTitle"/>
+<entry field="true" id="32" symbol="ForegroundColorTitle"/>
 <entry id="14" module="true" symbol="Layouts"/>
 <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry field="true" id="16" symbol="curStep"/>
 <entry id="8388635" module="true" symbol="Application"/>
 </symbolTable>
 <localVars>
-<entry endPc="268435578" name="dictionary" stackId="1" startPc="268435538"/>
-<entry arg="true" endPc="268435619" name="dc" stackId="1" startPc="268435580"/>
-<entry arg="true" endPc="268435706" name="dc" stackId="1" startPc="268435663"/>
-<entry endPc="268435827" name="stepView" stackId="1" startPc="268435724"/>
-<entry arg="true" endPc="268436206" name="dc" stackId="1" startPc="268435874"/>
-<entry endPc="268436205" name="timeFormat" stackId="2" startPc="268435878"/>
-<entry endPc="268436205" name="clockTime" stackId="3" startPc="268435878"/>
-<entry endPc="268436205" name="hours" stackId="4" startPc="268435878"/>
-<entry endPc="268436205" name="timeString" stackId="5" startPc="268435878"/>
-<entry endPc="268436205" name="view" stackId="6" startPc="268435878"/>
-<entry arg="true" endPc="268436316" name="clickEvent" stackId="1" startPc="268436226"/>
-<entry arg="true" endPc="268436343" name="state" stackId="1" startPc="268436317"/>
-<entry arg="true" endPc="268436805" name="dc" stackId="1" startPc="268436482"/>
-<entry endPc="268436805" name="rez_cmp_local_custom_drawable_17943124591932510742" stackId="2" startPc="268436494"/>
-<entry endPc="268436805" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268436494"/>
-<entry endPc="268436805" name="rez_cmp_local_text_StepLabel" stackId="4" startPc="268436494"/>
+<entry endPc="268435523" name="dictionary" stackId="1" startPc="268435483"/>
+<entry arg="true" endPc="268435564" name="dc" stackId="1" startPc="268435525"/>
+<entry arg="true" endPc="268435651" name="dc" stackId="1" startPc="268435608"/>
+<entry arg="true" endPc="268435755" name="id" stackId="1" startPc="268435652"/>
+<entry arg="true" endPc="268436337" name="dc" stackId="1" startPc="268435919"/>
+<entry endPc="268436336" name="timeFormat" stackId="2" startPc="268435923"/>
+<entry endPc="268436336" name="clockTime" stackId="3" startPc="268435923"/>
+<entry endPc="268436336" name="hours" stackId="4" startPc="268435923"/>
+<entry endPc="268436336" name="timeString" stackId="5" startPc="268435923"/>
+<entry endPc="268436336" name="view" stackId="6" startPc="268435923"/>
+<entry endPc="268436336" name="stepView" stackId="7" startPc="268435923"/>
+<entry endPc="268436336" name="curStepForm" stackId="8" startPc="268435923"/>
+<entry arg="true" endPc="268436412" name="clickEvent" stackId="1" startPc="268436357"/>
+<entry arg="true" endPc="268436911" name="dc" stackId="1" startPc="268436588"/>
+<entry endPc="268436911" name="rez_cmp_local_custom_drawable_23219526012351931131" stackId="2" startPc="268436600"/>
+<entry endPc="268436911" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268436600"/>
+<entry endPc="268436911" name="rez_cmp_local_text_StepLabel" stackId="4" startPc="268436600"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
@@ -165,75 +171,76 @@
 </annotations>
 <dataEntryOffsetMappings>
 <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-<dataEntry label="globals/Background" offset="472" parentId="globals" symbolId="Background" type="class"/>
-<dataEntry label="globals/Rez" offset="527" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry label="globals/tempView" offset="606" parentId="globals" symbolId="tempView" type="class"/>
-<dataEntry label="globals/tempApp" offset="709" parentId="globals" symbolId="tempApp" type="class"/>
-<dataEntry label="globals/Rez/Drawables" offset="804" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Layouts" offset="843" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry label="globals/Rez/Menus" offset="882" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry label="globals/Rez/Fonts" offset="913" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="944" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/JsonData" offset="1063" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Background" offset="182" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry label="globals/Rez" offset="237" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/tempView" offset="316" parentId="globals" symbolId="tempView" type="class"/>
+<dataEntry label="globals/tempApp" offset="443" parentId="globals" symbolId="tempApp" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="538" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="577" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="616" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="647" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="678" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="797" parentId="Rez" symbolId="JsonData" type="module"/>
 </dataEntryOffsetMappings>
 <functions>
-<functionEntry accessMode="public" endPc="268435533" name="&lt;init&gt;" parent="Background" startPc="268435515">
+<functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="Background" startPc="268435460">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435579" name="initialize" parent="Background" startPc="268435534">
+<functionEntry accessMode="public" endPc="268435524" name="initialize" parent="Background" startPc="268435479">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435619" name="draw" parent="Background" startPc="268435580">
+<functionEntry accessMode="public" endPc="268435564" name="draw" parent="Background" startPc="268435525">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435643" name="&lt;init&gt;" parent="Rez" startPc="268435620">
+<functionEntry accessMode="public" endPc="268435588" name="&lt;init&gt;" parent="Rez" startPc="268435565">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435662" name="&lt;init&gt;" parent="tempView" startPc="268435644">
+<functionEntry accessMode="public" endPc="268435607" name="&lt;init&gt;" parent="tempView" startPc="268435589">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onShow" parent="tempView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435706" name="onLayout" parent="tempView" startPc="268435663">
+<functionEntry accessMode="public" endPc="268435651" name="onLayout" parent="tempView" startPc="268435608">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435852" name="onComplicationChanged" parent="tempView" startPc="268435707">
+<functionEntry accessMode="public" endPc="268435755" name="onComplicationChanged" parent="tempView" startPc="268435652">
+<param id="id"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435873" name="initialize" parent="tempView" startPc="268435853">
+<functionEntry accessMode="public" endPc="268435918" name="initialize" parent="tempView" startPc="268435756">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436206" name="onUpdate" parent="tempView" startPc="268435874">
+<functionEntry accessMode="public" endPc="268436337" name="onUpdate" parent="tempView" startPc="268435919">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436225" name="&lt;init&gt;" parent="tempApp" startPc="268436207">
+<functionEntry accessMode="public" endPc="268436356" name="&lt;init&gt;" parent="tempApp" startPc="268436338">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436316" name="onPress" parent="tempApp" startPc="268436226">
+<functionEntry accessMode="public" endPc="268436412" name="onPress" parent="tempApp" startPc="268436357">
 <param id="clickEvent"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436343" name="onStart" parent="tempApp" startPc="268436317">
+<functionEntry accessMode="public" endPc="268436415" name="onStart" parent="tempApp" startPc="268436413">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436361" name="getApp" parent="tempApp" startPc="268436344">
+<functionEntry accessMode="public" endPc="268436433" name="getApp" parent="tempApp" startPc="268436416">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436414" name="onSettingsChanged" parent="tempApp" startPc="268436362">
+<functionEntry accessMode="public" endPc="268436486" name="onSettingsChanged" parent="tempApp" startPc="268436434">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436457" name="getInitialView" parent="tempApp" startPc="268436415">
+<functionEntry accessMode="public" endPc="268436563" name="getInitialView" parent="tempApp" startPc="268436487">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436478" name="initialize" parent="tempApp" startPc="268436458">
+<functionEntry accessMode="public" endPc="268436584" name="initialize" parent="tempApp" startPc="268436564">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436481" name="onStop" parent="tempApp" startPc="268436479">
+<functionEntry accessMode="public" endPc="268436587" name="onStop" parent="tempApp" startPc="268436585">
 <param id="state"/>
 <documentation/>
 </functionEntry>
@@ -255,7 +262,7 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436805" name="WatchFace" parent="Layouts" startPc="268436482">
+<functionEntry accessMode="public" endPc="268436911" name="WatchFace" parent="Layouts" startPc="268436588">
 <param id="dc"/>
 <documentation/>
 </functionEntry>

@@ -5,135 +5,96 @@ import Toybox.Lang;
 [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 3; ]
 import Toybox.WatchUi;
 [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 4; ]
-import Toybox.Complications;
-[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 5; ]
 import Toybox.System;
-[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 8; @position = 8; ]
-var mComplication;
-[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 10; @position = 8; ]
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 7; @position = 8; ]
 var myBackgroundColor = 0x000000;
-[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 11; @position = 8; ]
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 8; @position = 8; ]
 var myForegroundColor = 0xFFFFFF;
-[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 13; ]
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 10; @position = 8; ]
+var view = null;
+[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 12; ]
 class tempApp extends Application.AppBase{
-    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 13; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 12; ]
     <init> {
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 13; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 12; ]
     static
     <init> {
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 16; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 15; ]
     function initialize() as Void {
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_16_26_start:
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 17 8 ]
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_15_26_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 16 8 ]
         %tmp.2 = getv ? :AppBase;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_16_26_stop:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_15_26_stop:
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 21; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 20; ]
     function onStart(state as Dictionary or Null) as Void {
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_21_51_start:
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 24 8 ]
-        %tmp.1 = getm $.Toybox.Complications;
-        %tmp.2 = getv function %tmp.1 :subscribeToUpdates;
-        %tmp.4 = getv ? :mComplication;
-        invoke %tmp.1 %tmp.2(%tmp.4);
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_21_51_stop:
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 28; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 24; ]
     function onStop(state as Dictionary or Null) as Void {
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 32; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 28; ]
     function getInitialView() as Array<Views or InputDelegates> or Null {
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_32_65_start:
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 33 8 ]
-        %tmp.1 = newa Array<Views or InputDelegates> 1;
-        %tmp.5 = getv ? :tempView;
-        %tmp.2 = newc %tmp.5 ();
-        %tmp.6 = dup %tmp.1;
-        %tmp.7 = aputv %tmp.6 0 %tmp.2;
-        ret %tmp.7;
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_32_65_stop:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_28_65_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 29 8 ]
+        %tmp.4 = getv ? :tempView;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :view %tmp.1;
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 30 8 ]
+        %tmp.5 = newa Array<Views or InputDelegates> 1;
+        %tmp.9 = getv ? :tempView;
+        %tmp.6 = newc %tmp.9 ();
+        %tmp.10 = dup %tmp.5;
+        %tmp.11 = aputv %tmp.10 0 %tmp.6;
+        ret %tmp.11;
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_28_65_stop:
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 37; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 34; ]
     function onSettingsChanged() as Void {
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_37_41_start:
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 38 8 ]
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_34_41_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 35 8 ]
         %tmp.2 = getv ? :Properties;
         %tmp.3 = getv function %tmp.2 :getValue;
         %tmp.4 = "BackgroundColor";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         putv self :myBackgroundColor %tmp.5;
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 40 8 ]
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 37 8 ]
         %tmp.6 = getm $.Toybox.WatchUi;
         %tmp.7 = getv function %tmp.6 :requestUpdate;
         invoke %tmp.6 %tmp.7();
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_37_41_stop:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_34_41_stop:
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 43; ]
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 40; ]
     function getApp() as tempApp {
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_43_33_start:
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 44 8 ]
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_40_33_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 41 8 ]
         %tmp.1 = getm $.Toybox.Application;
         %tmp.2 = getv function %tmp.1 :getApp;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = as %tmp.3 tempApp;
         ret %tmp.4;
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_43_33_stop:
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_40_33_stop:
     }
-    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 47; ]
-    function onPress(clickEvent as ClickEvent) as Boolean {
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_47_58_start:
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 51 8 ]
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_51_8_if_stmt:
-        %tmp.2 = getv ? :mComplication;
-        %tmp.3 = null;
-        %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_51_8_if_false;
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_51_8_if_true:
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_51_35_start:
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 52 12 ]
-        %tmp.5 = getm $.Toybox.System;
-        %tmp.6 = getv function %tmp.5 :println;
-        %tmp.7 = "We found a complication! let's launch it ...";
-        invoke %tmp.5 %tmp.6(%tmp.7);
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 53 12 ]
-        %tmp.8 = getm $.Toybox.Complications;
-        %tmp.9 = getv function %tmp.8 :exitTo;
-        %tmp.11 = getv ? :mComplication;
-        invoke %tmp.8 %tmp.9(%tmp.11);
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 54 12 ]
-        %tmp.12 = true;
-        ret %tmp.12;
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_51_35_stop:
-        goto @_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_51_8_if_end;
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_51_8_if_false:
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_55_15_start:
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 56 12 ]
-        %tmp.13 = getm $.Toybox.System;
-        %tmp.14 = getv function %tmp.13 :println;
-        %tmp.15 = "No complication found";
-        invoke %tmp.13 %tmp.14(%tmp.15);
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 57 12 ]
-        %tmp.16 = false;
-        ret %tmp.16;
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_55_15_stop:
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_51_8_if_end:
-_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_47_58_stop:
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 44; ]
+    function onPress(clickEvent) {
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_44_33_start:
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 47 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "We found a complication! let's launch it ...";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 48 8 ]
+        %tmp.5 = getv ? :Complications;
+        %tmp.6 = getv function %tmp.5 :exitTo;
+        %tmp.8 = getv ? :view;
+        %tmp.9 = getv %tmp.8 :stepId;
+        invoke %tmp.5 %tmp.6(%tmp.9);
+_Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_44_33_stop:
     }
 }
 [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 1; ]
 <init> {
-[ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 8 8 ]
-    %tmp.17 = getm $.Toybox.Complications;
-    %tmp.18 = getv function %tmp.17 :getComplication;
-    %tmp.21 = getm $.Toybox.Complications;
-    %tmp.22 = getv function ? %tmp.21 :Id;
-    %tmp.23 = getm $.Toybox.Complications;
-    %tmp.24 = getv %tmp.23 :COMPLICATION_TYPE_STEPS;
-    %tmp.19 = newc %tmp.22 (%tmp.24);
-    %tmp.25 = invoke %tmp.17 %tmp.18(%tmp.19);
-    putv self :mComplication %tmp.25;
 }

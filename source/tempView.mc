@@ -8,13 +8,26 @@ import Toybox.ActivityMonitor;
 
 class tempView extends WatchUi.WatchFace {
 
-    var steps;
+    var stepId;
+    var stepComp;
+    var curStep = 0;
+
+    var hasComplications=true;
 
     var stepDisplay;
-    var stepString = "0";     //The number of steps to be displayed
+    var stepString = 0;     //The number of steps to be displayed
 
     function initialize() {
         WatchFace.initialize();
+
+        //Check for complications
+
+        stepId=new Id(Complications.COMPLICATION_TYPE_STEPS);
+        if(stepId!=null) {
+            stepComp = Complications.getComplication(stepId);
+            Complications.registerComplicationChangeCallback(self.method(:onComplicationChanged));
+                Complications.subscribeToUpdates(stepId);        
+        }
     }
 
     // Load your resources here
@@ -51,23 +64,29 @@ class tempView extends WatchUi.WatchFace {
 
         // Update the view
         var view = View.findDrawableById("TimeLabel") as Text;
+        var stepView = View.findDrawableById("StepLabel") as Text;
+
         view.setColor(myForegroundColor);
         view.setText(timeString);
+
+        var curStepForm = Lang.format("$1$",[curStep]);
+
+        stepView.setText(curStepForm);
+
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
     }
 
 
-    function onComplicationChanged() {
-        if (mComplication != null) {
-            steps = mComplication.value;
-            var stepView = View.findDrawableById("StepLabel") as Text;
-            stepView.setText(Lang.format("$1$", [steps]));
-        }
-     else {
+    function onComplicationChanged(id as Complications.Id) as Void {
+
+        if (id.equals(stepId)) {
+            curStep = Complications.getComplication(id).value;
+            System.println(curStep);
+        } else {
         System.println("Bad input");
-     }
+        }
     }
 
 }
