@@ -12,8 +12,6 @@ import Toybox.Complications;
 var myBackgroundColor = 0x000000;
 [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 10; @position = 8; ]
 var myForegroundColor = 0xFFFFFF;
-[ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 12; @position = 8; ]
-var view = null;
 [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 14; ]
 class tempApp extends Application.AppBase{
     [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 14; ]
@@ -23,6 +21,8 @@ class tempApp extends Application.AppBase{
     static
     <init> {
     }
+    [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 15; @position = 8; ]
+    var view = null;
     [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 17; ]
     function initialize() as Void {
 _Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_17_26_start:
@@ -46,12 +46,16 @@ _Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_30_65_start:
         %tmp.1 = newc %tmp.4 ();
         putv self :view %tmp.1;
 [ "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc" 32 8 ]
-        %tmp.5 = newa Array<Views or InputDelegates> 1;
-        %tmp.9 = getv ? :tempView;
-        %tmp.6 = newc %tmp.9 ();
-        %tmp.10 = dup %tmp.5;
-        %tmp.11 = aputv %tmp.10 0 %tmp.6;
-        ret %tmp.11;
+        %tmp.5 = newa Array<Views or InputDelegates> 2;
+        %tmp.7 = getv ? :view;
+        %tmp.8 = dup %tmp.5;
+        %tmp.9 = aputv %tmp.8 0 %tmp.7;
+        %tmp.13 = getv ? :tempDelegate;
+        %tmp.15 = getv ? :view;
+        %tmp.10 = newc %tmp.13 (%tmp.15);
+        %tmp.16 = dup %tmp.9;
+        %tmp.17 = aputv %tmp.16 1 %tmp.10;
+        ret %tmp.17;
 _Users_jeffreyforste_Garmin_Projects_temp_source_tempApp_mc_30_65_stop:
     }
     [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempApp.mc"; @line = 36; ]

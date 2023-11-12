@@ -90,7 +90,7 @@ class tempView extends WatchUi.WatchFace {
     }
 }
 
-class tempViewDelegate extends WatchUi.WatchFaceDelegate
+class tempDelegate extends WatchUi.WatchFaceDelegate
 {
 	var view;
 	

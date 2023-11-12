@@ -9,10 +9,10 @@ import Toybox.Complications;
     var myBackgroundColor = 0x000000;
     var myForegroundColor = 0xFFFFFF;
 
-    var view=null;
+
 
 class tempApp extends Application.AppBase {
-
+    var view=null;
 
     function initialize() {
         AppBase.initialize();
@@ -29,7 +29,7 @@ class tempApp extends Application.AppBase {
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
         view = new tempView();
-        return [ new tempView() ] as Array<Views or InputDelegates>;
+        return [view, new tempDelegate(view)] as Array<Views or InputDelegates>;
     }
 
     // New app settings have been received so trigger a UI update

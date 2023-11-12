@@ -286,7 +286,7 @@ _Users_jeffreyforste_Garmin_Projects_temp_source_tempView_mc_82_67_stop:
     }
 }
 [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 93; ]
-class tempViewDelegate extends WatchUi.WatchFaceDelegate{
+class tempDelegate extends WatchUi.WatchFaceDelegate{
     [ @file = "/Users/jeffreyforste/Garmin Projects/temp/source/tempView.mc"; @line = 93; ]
     <init> {
     }

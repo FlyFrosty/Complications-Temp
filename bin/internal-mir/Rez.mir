@@ -43,10 +43,10 @@ module Rez {
 _Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start:
 [ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 20 12 ]
             [ "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start" "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_custom_drawable_61965792393857173710.1 = local;
+            %rez_cmp_local_custom_drawable_14002868071073091847.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_61965792393857173710.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_14002868071073091847.1 %tmp.1;
 [ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 22 12 ]
             [ "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_start" "_Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_19_73_stop" ]
             %rez_cmp_local_text_TimeLabel.2 = local;
@@ -135,7 +135,7 @@ _Users_jeffreyforste_Garmin_Projects_temp_bin_gen_006_B3703_00_source_Rez_mcgen_
             lputv %rez_cmp_local_text_StepLabel.3 %tmp.53;
 [ "/Users/jeffreyforste/Garmin Projects/temp/bin/gen/006-B3703-00/source/Rez.mcgen" 26 12 ]
             %tmp.97 = newa Array<WatchUi.Drawable> 3;
-            %tmp.99 = lgetv %rez_cmp_local_custom_drawable_61965792393857173710.1;
+            %tmp.99 = lgetv %rez_cmp_local_custom_drawable_14002868071073091847.1;
             %tmp.100 = dup %tmp.97;
             %tmp.101 = aputv %tmp.100 0 %tmp.99;
             %tmp.103 = lgetv %rez_cmp_local_text_TimeLabel.2;
